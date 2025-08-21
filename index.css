@@ -1,0 +1,303 @@
+body {
+    margin: 0;
+    text-align: center;
+	background-color: whitesmoke;
+	overflow-x: hidden; /* Förhindrar horisontell scroll */
+	font-family: 'Smythe', Arial, sans-serif;
+} 
+/*banner*/
+.banner {
+    position: relative;
+}
+
+.banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-shadow: 2px 2px 8px #000;
+    text-align: center;
+    width: 100%;
+    font-family: 'Smythe', Arial, sans-serif;
+}
+
+.banner-name {
+    display: block;
+    font-size: 5.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.banner-slogan {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+figure {
+  width: 100%;
+  max-height: 400px;      /* Mindre höjd på banner */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;       /* Dölj allt utanför figure */
+}
+
+figure img {
+  width: 100%;
+  height: auto;           /* Bilden skalar automatiskt med bredden */
+  object-fit: contain;
+  opacity: 1;
+}
+
+
+/*menu and add food*/ 
+
+
+.items > .menu {
+    display: flex;
+    flex-direction: row; /* tidigare column */
+    align-items: center;
+    gap: 12px;
+    flex: 1 1 auto; /* tillåter texten att växa */
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    padding: 10px 12px;
+	margin-right: 5rem;
+}
+
+.menu-hr {
+	
+    left: 46px;
+    width: 80%;
+    
+}
+
+
+
+nav > p {
+    font-size: 16px;
+    max-width: 200px
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+	flex: 1 1 auto;
+    justify-content: center;
+}
+
+.icon {
+
+    opacity: 0.72;
+	font-size: 2.5rem;
+}
+
+nav > ul {
+	margin: 0 auto;
+}
+
+.items hr {
+    
+    
+    border-top: 3px solid #16DB99; 
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    gap: 18px;           /* avstånd mellan ALLA element */
+    padding: 10px 12px;
+    box-sizing: border-box;
+}
+
+.addfood-btn, .removefood-btn {
+    border: 2.5px solid #DEDEDE;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	cursor: pointer;
+}
+
+nav ul hr {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #D2D2D2;
+    margin: 0;
+}
+
+nav > ul {
+	padding: 0;
+	margin: 4px;
+}
+
+/*order section*/
+.order-hr {
+
+top: 957px;
+left: 46px;
+width: 80%;
+border: 2px solid black;
+margin: 24px;
+}
+
+.complete-order {
+	margin-bottom: 24px;
+	background-color: #16DB99;
+	width: 80%;
+	height: 60px;
+	border-radius: 3px;
+	opacity: 1;
+	border: none;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.order ul {
+	display: flex;
+    flex-direction: column;
+    gap: 5px; /* Avstånd mellan varje orderrad */
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+
+.item-amount {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Modal*/
+
+.modal {
+display: none;
+  position: fixed; /* Fixerat läge på sidan */
+  top: 0; /* Täck hela höjden */
+  left: 0; /* Täck hela bredden */
+  width: 100%; /* Full bredd */
+  height: 100%; /* Full höjd */
+  background-color: rgba(0, 0, 0, 0.5); /* Halvtransparent bakgrund */
+  z-index: 1; /* Se till att modalen ligger ovanpå andra element */
+  justify-content: center; /* Centrerar modalen horisontellt */
+  align-items: center; /* Centrerar modalen vertikalt */
+  text-align: center;
+  padding: 10px;
+}
+
+
+
+/* Stäng-knapp */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+    
+
+
+.pay-btn {
+  background-color: #16DB99;
+  text-align:center;
+  width: 475px;
+
+}
+
+
+
+
+
+/*generella inställningar*/
+li {
+	list-style-type: none
+}
+
+h2 {
+	font-weight: 400px;
+	font-size: 55px;
+}
+
+.order > p {
+    font-weight: ;
+    font-size: 28px;
+    line-height: 1.4; /* Ger bättre läsbarhet och luft */
+    margin: 12px 0;   /* Lite luft ovan och under */
+}
+
+/* se till att ikon är till vänster och name/ingredients/price staplas vertikalt till höger */
+.menu-row {
+    display: flex;
+    align-items: center;
+   margin-left: 5rem;
+    
+}
+
+/* layout: allt utom .buttons på rad, knapparna separat till höger */
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* gör vänsterdelen (ikon + text) till en rad */
+
+
+
+
+
+
+/* knapparna håller sig i sin kolumn till höger */
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 12px;
+}
+
+/* ikon-styling */
+.icon {
+    font-size: 4.5rem;
+    opacity: 0.72;
+	margin: 24px;
+}
+
+
+
+.addfood-btn, .removefood-btn {
+    border: 2.5px solid #DEDEDE;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	cursor: pointer;
+}

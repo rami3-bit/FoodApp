@@ -1,0 +1,52 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+	   <title>Ramis Stand</title>
+	   <meta charset="UTF-8">
+	   <!--fonts-->
+	   <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       
+        <figure class="banner">
+    <img src="banner.jpg" alt="Banner">
+    <figcaption class="banner-caption">
+        <span class="banner-name">Ramis Food Stand</span>
+        <span class="banner-slogan">Sveriges godaste snabbmat!</span>
+    </figcaption>
+</figure>
+    <main>
+        <nav>
+    <ul id="menu-list">
+        <!-- Menyn renderas här med JavaScript -->
+		 
+    </ul>
+</nav>
+
+    <div class="order">
+    	 
+			<!--order here-->
+        
+    </div>  
+
+<!-- Modal -->
+<div class="modal">
+  <div class="modal-content">
+    <span class="close-btn" id="closeModal">&times;</span>
+    <h3>Checkout</h3>
+    <form>
+      <label for="name"></label><br>
+      <input type="text" id="name" name="name" placeholder="Your name" required><br>
+      <label for="email"></label><br>
+      <input type="text" id="cardnumber" name="cardnumber" placeholder="Enter your card-number"required><br>
+      <label for="CVC"></label><br>
+      <input type="text" id="CVC" name="CVC" required maxlength="16" placeholder="CVC"><br><br>
+      <button class="pay-btn" type="submit">Pay</button>
+    </form>
+  </div>
+</div>
+</main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
