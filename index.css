@@ -55,7 +55,7 @@ figure img {
 
 /*menu and add food*/ 
 .name {
-	font-size: 5rem;
+	font-size: 2rem;
 }
 
 .items > .menu {
@@ -80,7 +80,12 @@ figure img {
     
 }
 
-
+.menu-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   /* vänsterjustera texten */
+    gap: 6px;
+}
 
 nav > p {
     font-size: 16px;
@@ -93,12 +98,17 @@ nav > p {
     flex-direction: column;
 	flex: 1 1 auto;
     justify-content: center;
+	width: 56px;
 }
 
 .icon {
-
-    opacity: 0.72;
-	font-size: 12.5rem;
+    font-size: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
 }
 
 nav > ul {
@@ -114,7 +124,6 @@ nav > ul {
 .items {
     display: flex;
     align-items: center;
-    gap: 18px;           /* avstånd mellan ALLA element */
     padding: 10px 12px;
     box-sizing: border-box;
 }
@@ -181,7 +190,7 @@ margin: 24px;
 }
 
 .ingredients {
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .item-amount {
@@ -258,8 +267,9 @@ h2 {
 /* se till att ikon är till vänster och name/ingredients/price staplas vertikalt till höger */
 .menu-row {
     display: flex;
-    align-items: center;
+    
    margin-left: 5rem;
+   gap: 2.5rem;
     
 }
 
@@ -286,11 +296,7 @@ h2 {
 }
 
 /* ikon-styling */
-.icons {
-    font-size: 7.5rem;
-    opacity: 0.72;
-	margin: 24px;
-}
+
 
 
 
