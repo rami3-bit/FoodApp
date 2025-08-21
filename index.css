@@ -1,7 +1,14 @@
+:root {
+    --accent: #16DB99;
+    --background: #FDEBC4;
+    --text: #222;
+	--menu-lines: #FFF8E8;
+}
+
 body {
     margin: 0;
     text-align: center;
-	background-color: whitesmoke;
+	background: var(--background);
 	overflow-x: hidden; /* Förhindrar horisontell scroll */
 	font-family: 'Smythe', Arial, sans-serif;
 } 
@@ -55,7 +62,8 @@ figure img {
 
 /*menu and add food*/ 
 .name {
-	font-size: 2rem;
+	font-size: 28px;
+
 }
 
 .items > .menu {
@@ -74,17 +82,20 @@ figure img {
 }
 
 .menu-hr {
-	
-    left: 46px;
-    width: 80%;
-    
+	menu-lines: var(--menu-lines)
+    border-top: 3px solid #16DB99; /* eller valfri färg/tjocklek */
+    align-self: stretch; /* gör att hr fyller flex-radens bredd */
 }
+
+
+
 
 .menu-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;   /* vänsterjustera texten */
-    gap: 6px;
+    gap: 0;
+	height: auto;
 }
 
 nav > p {
@@ -102,13 +113,13 @@ nav > p {
 }
 
 .icon {
-    font-size: 5rem;
+	height: 120px;
+    font-size: 6rem;
     width: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
 }
 
 nav > ul {
@@ -190,7 +201,7 @@ margin: 24px;
 }
 
 .ingredients {
-	font-size: 2rem;
+	font-size: 16px;
 }
 
 .item-amount {
@@ -267,10 +278,19 @@ h2 {
 /* se till att ikon är till vänster och name/ingredients/price staplas vertikalt till höger */
 .menu-row {
     display: flex;
+    min-height: 56px;
+   	margin-left: 5rem;
+   	gap: 2.5rem;
     
-   margin-left: 5rem;
-   gap: 2.5rem;
-    
+}
+
+.name,
+.ingredients {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0; /* ta bort eventuell extra marginal */
+    padding: 0; /* ta bort eventuell extra padding */
 }
 
 /* layout: allt utom .buttons på rad, knapparna separat till höger */
