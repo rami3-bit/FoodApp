@@ -103,7 +103,10 @@ nav > p {
     max-width: 200px
 }
 
+nav {
+	margin-top: 5rem;
 
+}
 .menu {
     display: flex;
     flex-direction: column;
@@ -209,6 +212,13 @@ margin: 24px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+
+
+font-weight: 400;
+font-size: 28px;
+line-height: 16.8px;
+letter-spacing: 0%;
+
 }
 
 /*Modal*/
@@ -264,6 +274,7 @@ li {
 }
 
 h2 {
+	margin-top: 15rem;
 	font-weight: 400px;
 	font-size: 55px;
 }
