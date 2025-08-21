@@ -54,7 +54,9 @@ figure img {
 
 
 /*menu and add food*/ 
-
+.name {
+	font-size: 5rem;
+}
 
 .items > .menu {
     display: flex;
@@ -96,7 +98,7 @@ nav > p {
 .icon {
 
     opacity: 0.72;
-	font-size: 2.5rem;
+	font-size: 12.5rem;
 }
 
 nav > ul {
@@ -178,7 +180,9 @@ margin: 24px;
     list-style-type: none;
 }
 
-
+.ingredients {
+	font-size: 3rem;
+}
 
 .item-amount {
     display: flex;
