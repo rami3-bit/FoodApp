@@ -15,37 +15,41 @@
         <span class="banner-slogan">Sveriges godaste snabbmat!</span>
     </figcaption>
 </figure>
-    <main>
-        <nav>
-    <ul id="menu-list">
-        <!-- Menyn renderas här med JavaScript -->
-		 
-    </ul>
-</nav>
 
+<main>
+    <nav>
+		<ul id="menu-list">
+			<!-- Menyn renderas här med JavaScript -->
+		</ul>
+	</nav>
+</main>
+
+<section>
     <div class="order">
-    	 
-			<!--order here-->
-        
+		<!--ordern/basket renderas här med JavaScript-->
     </div>  
+</section>
+
 
 <!-- Modal -->
-<div class="modal">
-  <div class="modal-content">
-    <span class="close-btn" id="closeModal">&times;</span>
-    <h3>Checkout</h3>
-    <form>
-      <label for="name"></label><br>
-      <input type="text" id="name" name="name" placeholder="Your name" required><br>
-      <label for="email"></label><br>
-      <input type="text" id="cardnumber" name="cardnumber" placeholder="Enter your card-number"required><br>
-      <label for="CVC"></label><br>
-      <input type="text" id="CVC" name="CVC" required maxlength="16" placeholder="CVC"><br><br>
-      <button class="pay-btn" type="submit">Pay</button>
-    </form>
-  </div>
-</div>
-</main>
+<section>
+	<div class="modal">
+		<div class="modal-content">
+			<span class="close-btn" id="closeModal">&times;</span>
+			<h3>Checkout</h3>
+			<form>
+			<label for="name"></label><br>
+			<input type="text" id="name" name="name" placeholder="Your name" required><br>
+			<label for="email"></label><br>
+			<input type="text" id="cardnumber" name="cardnumber" placeholder="Enter your card-number"required><br>
+			<label for="CVC"></label><br>
+			<input type="text" id="CVC" name="CVC" required maxlength="16" placeholder="CVC"><br><br>
+			<button class="pay-btn" type="submit">Pay</button>
+			</form>
+		</div>
+	</div>
+</section>
+
 	<script src="index.js" type="module"></script>
     </body>
 </html>
