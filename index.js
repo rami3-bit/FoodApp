@@ -52,7 +52,7 @@ function renderTotalAmount() {
         const qty = basket[item.id] || 0;
         if (qty > 0) {
             hasItems = true;
-            orderHtml += `<li class="item-amount">${item.name} <span id="order-amount-${item.id}">(${qty})</span></li>`;
+            orderHtml += `<li class="item-amount">${item.name} <span class="order-amount" id="order-amount-${item.id}">(${qty})</span></li>`;
             total += qty * item.price;
         }
     });

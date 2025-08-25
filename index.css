@@ -16,7 +16,7 @@ body {
 
 li { list-style-type: none; }
 h2 {
-    margin-top: 15rem;
+    margin-top: 2rem;
     font-weight: 400;
     font-size: 55px;
 }
@@ -153,7 +153,7 @@ nav > p {
 /* Meny-linje */
 .menu-hr {
     width: 100%;
-    max-width: 690px;
+    max-width: 695px;
     border: none;
     border-top: 3px solid var(--menu-lines, #16DB99);
     margin: 0 auto;
@@ -221,6 +221,11 @@ nav > p {
     font-size: 28px;
     line-height: 1.4;
     margin: 12px 0;
+}
+
+.item-amount { /**/
+	gap: 33rem;
+	
 }
 
 /* ====== Modal ====== */
