@@ -74,6 +74,7 @@ nav > p {
     margin: 0 auto;
     padding: 10px 12px;
     box-sizing: border-box;
+	gap: 20rem; /* avstånd mellan menu-row och add/remove buttons */
 }
 
 /* Ikon + text i rad */
@@ -84,15 +85,19 @@ nav > p {
     gap: 16px;
 }
 
+
+
+
 /* Ikon */
 .icon {
-    font-size: 2.4rem;
+    font-size: 5rem;
     width: 56px;
     height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+	margin: 24px;
 }
 
 /* Textkolumn */
@@ -106,7 +111,9 @@ nav > p {
 /* Namn och ingredients */
 .name,
 .ingredients {
+	font-size: 1.4rem;
     height: 40px;
+	width: 10rem;
     display: flex;
     align-items: center;
     margin: 0;
@@ -123,9 +130,10 @@ nav > p {
 /* Knappar */
 .buttons {
     display: flex;
-    align-items: center;
+	justify-content: center;
+    flex-direction: row;
     gap: 10px;
-    margin-left: 12px;
+    
 }
 
 /* Add/Remove-knappar */
@@ -144,8 +152,8 @@ nav > p {
 
 /* Meny-linje */
 .menu-hr {
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 690px;
     border: none;
     border-top: 3px solid var(--menu-lines, #16DB99);
     margin: 0 auto;
