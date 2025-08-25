@@ -52,18 +52,21 @@ function renderTotalAmount() {
         const qty = basket[item.id] || 0;
         if (qty > 0) {
             hasItems = true;
-            orderHtml += `<li class="item-amount">${item.name} <span class="order-amount" id="order-amount-${item.id}">(${qty})</span></li>`;
+            orderHtml += `
+			<li class="item-amount">${item.name} <span class="order-amount" id="order-amount-${item.id}">(${qty})</span></li>`;
             total += qty * item.price;
         }
     });
 
-    orderHtml += `</ul><hr class="order-hr">
-	<div>
-		<p id="total-amount">Total price: ${total} $</p>
-	</div>
-	<div>
-		<button class="complete-order">Complete order</button>
-	</div>`;
+    orderHtml += `<hr class="order-hr">
+	<div class="order"
+		<div>
+			<p id="total-amount">Total price: ${total} $</p>
+		</div>
+		<div>
+			<button class="complete-order">Complete order</button>
+		</div>
+	</div>	`;
 	
 
     const orderDiv = document.querySelector(".order");
