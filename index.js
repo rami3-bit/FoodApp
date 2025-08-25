@@ -30,10 +30,11 @@ menuList.innerHTML = menuHtml;
 
 
 
-
+// lägger till varor i kundvagn
 const addFoodBtn = document.querySelectorAll(".addfood-btn");
-addFoodBtn.forEach(btn => {
-    btn.addEventListener("click", (e) => {
+
+addFoodBtn.forEach(addBtn => {
+    addBtn.addEventListener("click", (e) => {
         const productId = Number(e.currentTarget.dataset.id);
         basket[productId] = (basket[productId] || 0) + 1;
         const amountEl = document.getElementById(`amount-${productId}`);
@@ -42,7 +43,20 @@ addFoodBtn.forEach(btn => {
     });
 });
 
-// korg
+
+// tar bort varor från kundvagn
+const removefoodBtn = document.querySelectorAll(".removefood-btn")
+
+removefoodBtn.forEach(removeBtn => {
+	removeBtn.addEventListener("click", (e) => {
+		
+	})
+	const productId = Number(e.currentTarget.dataset.id);
+	
+});
+
+
+// Korg, visar totala tillagda varor
 function renderTotalAmount() {
     let total = 0;
     let hasItems = false;
@@ -53,7 +67,11 @@ function renderTotalAmount() {
         if (qty > 0) {
             hasItems = true;
             orderHtml += `
-			<li class="item-amount">${item.name} <span class="order-amount" id="order-amount-${item.id}">(${qty})</span></li>`;
+			<li class="item-amount">
+				<span class="order-name">${item.name}</span>
+				<span class="order-qty">x${qty}</span>
+				<span class="order-price">${item.price * qty} $</span>
+			</li>`;
             total += qty * item.price;
         }
     });
@@ -72,6 +90,10 @@ function renderTotalAmount() {
     const orderDiv = document.querySelector(".order");
     if (orderDiv) orderDiv.innerHTML = hasItems ? orderHtml : "";
 }
+
+// renderar modal
+
+
 
 // visa initial state
 renderTotalAmount();
