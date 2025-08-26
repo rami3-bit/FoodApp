@@ -35,9 +35,14 @@ h2 {
     font-family: 'Smythe', Arial, sans-serif;
 }
 .banner-name { display: block; font-size: 5.2rem; font-weight: bold; margin-bottom: 8px; }
-.banner-slogan { display: block; font-size: 2.2rem; font-weight: 400; }
+
+.banner-slogan {
+	 display: block; 
+	 font-size: 2.2rem; 
+	 font-weight: 400; 
+	}
 figure {
-    width: 100%;
+    width: 100vw;
     max-height: 400px;
     margin: 0;
     display: flex;
@@ -46,10 +51,12 @@ figure {
     overflow: hidden;
 }
 figure img {
-    width: 100%;
+    width: 100vw;
     height: auto;
     object-fit: contain;
     opacity: 1;
+	object-fit: cover;
+	 display: block;
 }
 
 /* ====== Menu ====== */
@@ -171,7 +178,7 @@ figure img {
     font-size: 28px;
     line-height: 1.2;
     letter-spacing: 0;
-	gap: 39rem;
+	gap: 17.4rem;
 }
 
 /* Order-linje */
@@ -187,7 +194,7 @@ figure img {
 .complete-order {
     margin-bottom: 24px;
     background-color: #4F1D03;
-    width: 100%;
+    width: 790px;
     height: 60px;
     border-radius: 8px;
     opacity: 1;
@@ -250,3 +257,7 @@ nav ul hr {
     border-bottom: 2px solid #D2D2D2;
     margin: 0;
 }
+
+
+/*responsivitet*/
+

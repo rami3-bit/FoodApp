@@ -48,11 +48,20 @@ addFoodBtn.forEach(addBtn => {
 const removefoodBtn = document.querySelectorAll(".removefood-btn")
 
 removefoodBtn.forEach(removeBtn => {
+	
 	removeBtn.addEventListener("click", (e) => {
+		const productId = Number(e.currentTarget.dataset.id);
+		const amountEl = document.getElementById(`amount-${productId}`);
+		if (basket[productId] > 0) {
+			basket[productId]--;
+			amountEl.textContent = `(${basket[productId]})`
+			
+			if (amountEl) amountEl.textContent = `(${basket[productId]})`;
+				basket[productId]--
+		}
+		renderTotalAmount();
 		
 	})
-	const productId = Number(e.currentTarget.dataset.id);
-	
 });
 
 
@@ -77,7 +86,7 @@ function renderTotalAmount() {
     });
 
     orderHtml += `<hr class="order-hr">
-	<div class="order"
+	<div class="order">
 		<div>
 			<p id="total-amount">Total price: ${total} $</p>
 		</div>
