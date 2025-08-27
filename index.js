@@ -51,13 +51,8 @@ removefoodBtn.forEach(removeBtn => {
 	
 	removeBtn.addEventListener("click", (e) => {
 		const productId = Number(e.currentTarget.dataset.id);
-		const amountEl = document.getElementById(`amount-${productId}`);
 		if (basket[productId] > 0) {
 			basket[productId]--;
-			amountEl.textContent = `(${basket[productId]})`
-			
-			if (amountEl) amountEl.textContent = `(${basket[productId]})`;
-				basket[productId]--
 		}
 		renderTotalAmount();
 		
