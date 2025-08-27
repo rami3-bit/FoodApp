@@ -72,10 +72,16 @@ function renderTotalAmount() {
             hasItems = true;
             orderHtml += `
 			<li class="item-amount">
-				<span class="order-name">${item.name}</span>
-				<span class="order-qty">x${qty}</span>
-				<span class="order-price">${item.price * qty} $</span>
-			</li>`;
+        <div class="order-name-wrapper">
+            <span class="order-name">${item.name}</span>
+        </div>
+        <div class="order-qty-wrapper">
+            <span class="order-qty">x${qty}</span>
+        </div>
+        <div class="order-price-wrapper">
+            <span class="order-price">${item.price * qty} $</span>
+        </div>
+    </li>`;
             total += qty * item.price;
         }
     });
@@ -95,9 +101,11 @@ function renderTotalAmount() {
     if (orderDiv) orderDiv.innerHTML = hasItems ? orderHtml : "";
 }
 
-// renderar modal
+// renderar modal vid click på complete order
+const displayModal = document.querySelector(".modal")
+displayModal.addEventListener("click", (e) => {
 
-
+})
 
 // visa initial state
 renderTotalAmount();

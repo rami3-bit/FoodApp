@@ -163,22 +163,20 @@ figure img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    
-    
-    
+}
+
+.order-price-wrapper {
+	flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .item-amount {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    gap: 0.5rem;
     font-weight: 400;
     font-size: 28px;
-    line-height: 1.2;
-    letter-spacing: 0;
-	gap: 17.4rem;
 }
 
 /* Order-linje */
