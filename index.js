@@ -108,6 +108,13 @@ document.addEventListener("click", (e) => {
         modal.style.display = "block";
     }
 });
+// stänger complete order modal
+const modal = document.getElementById("modal");
+const closeBtn = document.getElementById("close-modal");
+
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
 
 // visa initial state
 renderTotalAmount();

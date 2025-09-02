@@ -247,7 +247,7 @@ input {
     cursor: pointer;
 }
 .pay-btn {
-    background-color: var(--accent);
+    background-color:#4F1D03;
     text-align: center;
     width: 475px;
     border-radius: 8px;
