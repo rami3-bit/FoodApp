@@ -102,10 +102,12 @@ function renderTotalAmount() {
 }
 
 // renderar modal vid click på complete order
-const displayModal = document.querySelector(".modal")
-displayModal.addEventListener("click", (e) => {
-
-})
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("complete-order")) {
+        const modal = document.querySelector(".modal");
+        modal.style.display = "block";
+    }
+});
 
 // visa initial state
 renderTotalAmount();
