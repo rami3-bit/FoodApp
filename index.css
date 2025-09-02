@@ -227,8 +227,12 @@ figure img {
 }
 
 input {
-	width: auto;
+	width: 100%;
+	height: 100%;
+	padding: 1rem;
+	font-size: 24px;;
 }
+
 
 .close {
     color: #aaa;
