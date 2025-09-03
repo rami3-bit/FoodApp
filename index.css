@@ -14,11 +14,14 @@ body {
     font-family: 'Smythe', Arial, sans-serif;
 }
 
-li { list-style-type: none; }
+li { 
+	list-style-type: none; 
+}
+
 h2 {
     margin-top: 2rem;
     font-weight: 400;
-    font-size: 55px;
+    font-size: 3.4375rem;
 }
 
 /* ====== Banner ====== */
@@ -69,11 +72,11 @@ figure img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: auto;
     margin: 0 auto;
-    padding: 10px 12px;
+    padding: 1rem;
     box-sizing: border-box;
-	gap: 2rem; /* avstånd mellan menu-row och add/remove buttons */
+    gap: 2rem; /* avstånd mellan menu-row och add/remove buttons */
 }
 
 /* Ikon + text i rad */
@@ -89,14 +92,10 @@ figure img {
 
 /* Ikon */
 .icon {
-    font-size: 5rem;
-    width: 56px;
-    height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-	margin: 24px;
+    font-size: 5rem;
 }
 
 /* Textkolumn */
@@ -108,20 +107,28 @@ figure img {
 }
 
 /* Namn och ingredients */
-.name,
+.name {
+    display: inline-block;
+    align-self: center;
+	font-size: 3rem;
+	
+	
+}
+
 .ingredients {
-    height: 40px;
-	width: 10rem;
-    display: flex;
-    align-items: center;
+	display: block;
     margin: 0;
-    padding: 0;
+    
+	font-size: 1.5rem;
+	color: black;
 }
 
 
 /* Pris */
 .price {
-    font-size: 18px;
+font-weight: 400;
+font-display: block;ine-height: 1.5rem;
+mamax-width: 220px;rgin: 0;
 }
 
 /* Knappar */
@@ -133,7 +140,14 @@ figure img {
     
 }
 
-/* Add/Remove-knappar */
+
+.price-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+	
+}
 .addfood-btn, .removefood-btn {
     border: 2.5px solid #DEDEDE;
     border-radius: 50%;

@@ -12,11 +12,13 @@ menuArray.forEach(item => {
 		<li class="items">
 			<div class="menu-row">
 				<span class="icon">${item.emoji}</span>
-				<div class="menu-info">
-					<strong class="name">${item.name}</strong>
-					<p class="ingredients">${Array.isArray(item.ingredients) ? item.ingredients.join(", ") : item.ingredients}</p>
-					<p class="price" id="price-${item.id}">${item.price} $</p>
-				</div>
+					<div class="menu-info">
+						<strong class="name">${item.name}</strong>
+						<p class="ingredients">${Array.isArray(item.ingredients) ? item.ingredients.join(", ") : item.ingredients}</p>
+						<div class="prices">
+							<p class="price" id="price-${item.id}">${item.price} $</p>
+						</div>
+					</div>
 			</div>
 			<div class="buttons">
 				<button class="addfood-btn" data-id="${item.id}">+</button>
