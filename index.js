@@ -24,7 +24,7 @@ menuArray.forEach(item => {
 
             </div>
 
-        <div>
+        <div class="menu-btn">
             <button class="addfood-btn" data-id="${item.id}">+</button>
             <button class="removefood-btn" data-id="${item.id}">-</button>
         </div>

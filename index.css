@@ -35,15 +35,19 @@ h2 {
     width: 100%;
     font-family: 'Smythe', Arial, sans-serif;
 }
-.banner-name { display: block; font-size: 5.2rem; font-weight: bold; margin-bottom: 8px; }
+.banner-name { 
+	display: block;
+	 font-size: 2.5rem; 
+	 font-weight: bold; 
+	 margin-bottom: 8px; }
 
 .banner-slogan {
 	 display: block; 
-	 font-size: 2.2rem; 
+	 font-size: 1rem; 
 	 font-weight: 400; 
 	}
 figure {
-    width: 100vw;
+    
     max-height: 400px;
     margin: 0;
     display: flex;
@@ -52,44 +56,56 @@ figure {
     overflow: hidden;
 }
 figure img {
-    width: 100vw;
+    width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     opacity: 1;
 	display: block;
+	max-width: 1200px;
 }
 
 /* ====== Menu ====== */
- main {
-	display: flex;
-	justify-content: center;
-	margin: 0;
-	font-size: 2rem;
+
+
+main {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+text-align: center;
 }
 
 main div {
-	display: inline-block;
-	padding: 2.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 1rem;
+	width: 100%;
+	
 }
 
 .menu-item {
-	flex-direction: column;
-	padding: 1rem;
+flex-direction: column;
+
 }
 
 .icon {
 	font-size: 5rem;
 }
 
+.menu-btn {
+	display: flex;
+	gap: 1em;
+	
+}
+
+
 .addfood-btn,
 .removefood-btn {
-	display: inline-block;
     width: 32px;
     height: 32px;
     font-size: 1.2rem;
     border-radius: 50%;
     padding: 0;
-	gap: 3rem;
 }
 
 
