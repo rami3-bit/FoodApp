@@ -9,23 +9,27 @@ const menuList = document.getElementById("menu-list");
 let menuHtml = "";
 menuArray.forEach(item => {
 	menuHtml += `
-		<li class="items">
-			<div class="menu-row">
-				<span class="icon">${item.emoji}</span>
-					<div class="menu-info">
-						<strong class="name">${item.name}</strong>
-						<p class="ingredients">${Array.isArray(item.ingredients) ? item.ingredients.join(", ") : item.ingredients}</p>
-						<div class="prices">
-							<p class="price" id="price-${item.id}">${item.price} $</p>
-						</div>
-					</div>
-			</div>
-			<div class="buttons">
-				<button class="addfood-btn" data-id="${item.id}">+</button>
-				<button class="removefood-btn" data-id="${item.id}">-</button>
-			</div>
-		</li>
-		<hr class="menu-hr">
+    <li>
+        <div>
+        	<span class="icon">${item.emoji}</span>
+		<div>
+
+            <div class="menu-item">
+                <strong class="name">${item.name}</strong>
+			
+			
+                <p class="ingredients">${Array.isArray(item.ingredients) ? item.ingredients.join(", ") : item.ingredients}</p>
+			
+                <p class="price" id="price-${item.id}">${item.price} $</p>   
+
+            </div>
+
+        <div>
+            <button class="addfood-btn" data-id="${item.id}">+</button>
+            <button class="removefood-btn" data-id="${item.id}">-</button>
+        </div>
+    </li>
+    	<hr class="menu-hr">
 	`;
 });
 menuList.innerHTML = menuHtml;
