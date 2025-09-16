@@ -9,19 +9,19 @@ const menuList = document.getElementById("menu-list");
 let menuHtml = "";
 menuArray.forEach(item => {
 	menuHtml += `
-    <li>
+    <li class="li-menu">
         <div>
         	<span class="icon">${item.emoji}</span>
 		<div>
 
             <div class="menu-item">
+
                 <strong class="name">${item.name}</strong>
-			
 			
                 <p class="ingredients">${Array.isArray(item.ingredients) ? item.ingredients.join(", ") : item.ingredients}</p>
 			
                 <p class="price" id="price-${item.id}">${item.price} $</p>   
-
+				
             </div>
 
         <div class="menu-btn">

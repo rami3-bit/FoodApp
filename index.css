@@ -20,6 +20,7 @@ h2 {
     margin-top: 2rem;
     font-weight: 400;
     font-size: 3.4375rem;
+	text-align: center;
 }
 
 /* ====== Banner ====== */
@@ -37,7 +38,6 @@ h2 {
 }
 .banner-name { 
 	display: block;
-	 font-size: 2.5rem; 
 	 font-weight: bold; 
 	 margin-bottom: 8px; }
 
@@ -66,37 +66,52 @@ figure img {
 
 /* ====== Menu ====== */
 
+.menu-list {
 
-main {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-text-align: center;
+padding-right: 40px;
+
 }
 
-main div {
+
+
+
+
+.li-menu div {
 	display: flex;
-	flex-direction: row;
 	justify-content: center;
-	padding: 1rem;
+	font-weight: 500;
 	width: 100%;
 	
+
 }
 
 .menu-item {
-flex-direction: column;
-
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+}
+.name, .ingredients, .price {
+    margin: 0;
 }
 
+
 .icon {
-	font-size: 5rem;
+	font-size: 3rem;
+	margin-right: 2rem;
+	
 }
 
 .menu-btn {
-	display: flex;
 	gap: 1em;
+	margin-top: 2rem;
 	
 }
+
+.ingredients {
+	
+	
+}
+
 
 
 .addfood-btn,
@@ -115,6 +130,7 @@ flex-direction: column;
     display: flex;
     flex-direction: column;
     align-items: center;
+	width: 100%;
 }
 
 .order-price-wrapper {
@@ -144,8 +160,6 @@ flex-direction: column;
 .complete-order {
     margin-bottom: 24px;
     background-color: #4F1D03;
-    width: 790px;
-    height: 60px;
     border-radius: 8px;
     opacity: 1;
     border: none;
