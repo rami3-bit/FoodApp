@@ -67,61 +67,26 @@ figure img {
 /* ====== Menu ====== */
 
 .menu-list {
-
-padding-right: 40px;
-
-}
-
-
-
-
-
-.li-menu div {
 	display: flex;
-	justify-content: center;
-	font-weight: 500;
-	width: 100%;
-	
-
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+	padding: 2rem;
 }
 
-.menu-item {
+.li-menu {
 	display: flex;
 	flex-direction: column;
-	gap: 0.2rem;
-}
-.name, .ingredients, .price {
+
+    padding: 0; 
     margin: 0;
 }
 
-
-.icon {
-	font-size: 3rem;
-	margin-right: 2rem;
-	
-}
-
 .menu-btn {
-	gap: 1em;
-	margin-top: 2rem;
+	display: inline-block;
 	
 }
 
-.ingredients {
-	
-	
-}
-
-
-
-.addfood-btn,
-.removefood-btn {
-    width: 32px;
-    height: 32px;
-    font-size: 1.2rem;
-    border-radius: 50%;
-    padding: 0;
-}
 
 
 
@@ -198,9 +163,12 @@ input {
 	width: 100%;
 	height: 100%;
 	padding: 1rem;
-	font-size: 2rem;
+	font-size: 1rem;
 }
 
+h3 { /*"checkout" text*/
+	
+}
 
 .close {
     color: #aaa;
@@ -217,7 +185,7 @@ input {
 .pay-btn {
     background-color:#4F1D03;
     text-align: center;
-    width: 475px;
+    min-width: 250px;
     border-radius: 8px;
     border: none;
     padding: 12px 24px;
