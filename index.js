@@ -78,16 +78,20 @@ function renderTotalAmount() {
         if (qty > 0) {
             hasItems = true;
             orderHtml += `
-			<li class="item-amount">
+	<li>
+
         <div class="order-name-wrapper">
             <span class="order-name">${item.name}</span>
         </div>
+
         <div class="order-qty-wrapper">
-            <span class="order-qty">x${qty}</span>
+           	<span class="order-qty">x${qty}</span>
+       	</div>
+
+       	<div class="order-price-wrapper">
+        	<span class="order-price">${item.price * qty} $</span>
         </div>
-        <div class="order-price-wrapper">
-            <span class="order-price">${item.price * qty} $</span>
-        </div>
+
     </li>`;
             total += qty * item.price;
         }

@@ -17,7 +17,8 @@ li {
 }
 
 h2 {
-    margin-top: 2rem;
+	width: 100%;
+    margin: 0;
     font-weight: 400;
     font-size: 3.4375rem;
 	text-align: center;
@@ -68,6 +69,7 @@ figure img {
 
 main ul {
 	padding: 24px;
+	margin: 0;
 }
 
 main li {
@@ -124,55 +126,37 @@ main li {
 
 /* ====== Order Section ====== */
 .order {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+	text-align: center;
 	width: 100%;
-}
-
-.order-price-wrapper {
-	flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.item-amount {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    font-weight: 400;
-    font-size: 28px;
-}
-
-/* Order-linje */
-.order-hr {
-    width: 100%;
-    border-top: 3B1602;
-    opacity: 1;
+	padding: 0;
 	margin: 0;
-	border-color: 3B1602;
 }
 
-/* Order-knapp */
-.complete-order {
-    margin-bottom: 24px;
-    background-color: #4F1D03;
-    border-radius: 8px;
-    opacity: 1;
-    border: none;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-    cursor: pointer;
+section ul {
+	text-align: center;
+	padding: 24px;
 }
 
-/* Order-total */
-.order > p {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 1.4;
-    margin: 12px 0;
+section li {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 5rem;
+	
 }
+.order-name-wrapper {
+	max-width: 1rem;
+}
+
+.order-qty-wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+
 
 /* ====== Modal ====== */
 .modal {
@@ -188,7 +172,6 @@ main li {
     align-items: center;
     text-align: center;
     padding: 0.8rem;
-	
 }
 
 input {
