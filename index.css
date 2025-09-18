@@ -113,7 +113,7 @@ main li {
 
 
 .menu-icon {
-	font-size: 4.5rem;
+	font-size: 3.5rem;
 	width: 100px;
 	
 }
@@ -136,6 +136,8 @@ main li {
 section ul {
 	text-align: center;
 	padding: 24px;
+	padding: 0 24px;
+	margin: 0;
 }
 
 section li {
