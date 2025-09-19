@@ -68,11 +68,13 @@ figure img {
 /* ====== Menu ====== */	
 
 main ul {
-	padding: 24px;
+	
+	padding: 1.5rem;
 	margin: 0;
 }
 
 main li {
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -88,12 +90,17 @@ main li {
 }
 
 .ingredients {
+	display: flex;
 	margin: 24px;
 	max-width: 100px;
 }
 
+
+
 .addfood-btn, .removefood-btn {
-	
+	right: 50;
+	height: 2rem;
+	width: 2rem;
 	gap: 1rem;
 	border-radius: 50%;
 	border: none;
@@ -113,9 +120,15 @@ main li {
 
 
 .menu-icon {
-	font-size: 3.5rem;
-	width: 100px;
+	display: flex;
 	
+	justify-content: center;
+	width: 4rem;
+	font-size: 4rem;
+}
+
+.menu-btn {
+	margin-left: auto;
 }
 
 
@@ -125,12 +138,14 @@ main li {
 
 
 /* ====== Order Section ====== */
+
+
 .order {
     display: block;
 	text-align: center;
-	width: 100%;
 	padding: 0;
 	margin: 0;
+	
 }
 
 section ul {
