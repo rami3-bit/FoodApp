@@ -139,37 +139,31 @@ main li {
 
 /* ====== Order Section ====== */
 
+section ul {
+	padding: 24px;
+}
+
+
+section p {
+	margin: 0;
+}
 
 .order {
     display: block;
 	text-align: center;
-	padding: 0;
-	margin: 0;
-	
-}
-
-section ul {
-	text-align: center;
-	padding: 24px;
-	padding: 0 24px;
+	padding: 0px;
 	margin: 0;
 }
 
-section li {
+.order li {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	gap: 5rem;
-	
-}
-.order-name-wrapper {
-	max-width: 1rem;
+	gap: 5px;
 }
 
-.order-qty-wrapper {
-	display: flex;
-	flex-direction: column;
+.order-price-wrapper {
+	margin-left: auto;
 }
+
 
 
 

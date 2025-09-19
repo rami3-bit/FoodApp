@@ -80,6 +80,7 @@ function renderTotalAmount() {
             orderHtml += `
 	<li>
 
+	
         <div class="order-name-wrapper">
             <span class="order-name">${item.name}</span>
         </div>
@@ -87,9 +88,10 @@ function renderTotalAmount() {
         <div class="order-qty-wrapper">
            	<span class="order-qty">x${qty}</span>
        	</div>
+	
 
        	<div class="order-price-wrapper">
-        	<span class="order-price">${item.price * qty} $</span>
+        	<span class="order-price">$ ${item.price * qty} </span>
         </div>
 
     </li>`;
@@ -101,7 +103,7 @@ function renderTotalAmount() {
 	<div class="order">
 	
 		<div>
-			<p id="total-amount">Total price: ${total} $</p>
+			<p id="total-amount">Total price: $ ${total} </p>
 		</div>
 		<div class="complete-btn">
 			<button class="complete-order">Complete order</button>
