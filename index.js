@@ -105,9 +105,11 @@ function renderTotalAmount() {
 		<div>
 			<p id="total-amount">Total price: $ ${total} </p>
 		</div>
+
 		<div class="complete-btn">
 			<button class="complete-order">Complete order</button>
 		</div>
+		
 	</div>	`;
 	
 

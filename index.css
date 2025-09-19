@@ -68,7 +68,7 @@ figure img {
 /* ====== Menu ====== */	
 
 main ul {
-	
+	padding-bottom: 0;
 	padding: 1.5rem;
 	margin: 0;
 }
@@ -81,7 +81,7 @@ main li {
 	gap: 1.5rem;
 	align-content: center;
 	align-items: center;
-	
+	font-size: 14px;
 }
 
 .main div {
@@ -123,8 +123,8 @@ main li {
 	display: flex;
 	
 	justify-content: center;
-	width: 4rem;
-	font-size: 4rem;
+	width: 3rem;
+	font-size: 3rem;
 }
 
 .menu-btn {
@@ -140,19 +140,13 @@ main li {
 /* ====== Order Section ====== */
 
 section ul {
-	padding: 24px;
-}
-
-
-section p {
+	padding: 1.5rem;
 	margin: 0;
 }
-
 .order {
     display: block;
 	text-align: center;
-	padding: 0px;
-	margin: 0;
+	padding: 0;
 }
 
 .order li {
@@ -164,7 +158,15 @@ section p {
 	margin-left: auto;
 }
 
-
+.complete-order {
+	width: 100%;
+	height: 2.5rem;
+	background-color: #8b4513;
+	color: #ffffff;
+	font-family: Verdana;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
 
 
 
