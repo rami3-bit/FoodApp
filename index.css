@@ -195,13 +195,15 @@ input {
 }
 
 h3 { /*"checkout" text*/
-
+		margin: 0 auto;
+		text-align: center;
+		align-self: center;
 }
 
-.close {
+.close { /*stänger modal*/ 
     color: #aaa;
     float: right;
-    font-size: 1.75rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 .close:hover,
