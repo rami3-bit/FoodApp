@@ -58,11 +58,10 @@ figure {
 }
 figure img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     opacity: 1;
 	display: block;
-	max-width: 1200px;
 }
 
 /* ====== Menu ====== */	
@@ -232,3 +231,15 @@ h3 { /*"checkout" text*/
 
 /*responsivitet*/
 
+@media (min-width: 1200px) {
+	html {
+		font-size: 2rem;
+	}
+	main, section {
+		width: 50%;
+		margin: 0 auto;
+	}
+	ul {
+		padding: 0;
+	}
+}
