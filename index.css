@@ -48,8 +48,7 @@ h2 {
 	 font-weight: 400; 
 	}
 figure {
-    
-    max-height: 400px;
+    max-height: 150px;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -131,7 +130,7 @@ font-size: 1.5rem;
 	display: flex;
 	justify-content: center;
 	width: 3rem;
-	font-size: 4.5rem;
+	font-size: 4rem;
 }
 
 .menu-btn {
@@ -159,13 +158,8 @@ section ul {
 .order li {
 	display: flex;
 	gap: 5px;
-
-	font-family: Smythe;
 	font-weight: 400;
-	
-	font-size: 28px;
-
-
+	font-size: 1.5rem;
 }
 
 .order-price-wrapper {
@@ -260,5 +254,8 @@ h3 { /*"checkout" text*/
 	.name, .ingredients, .price {
 		font-size: .7rem;
 		width: 100%;
+	}
+	figure {
+	
 	}
 }
