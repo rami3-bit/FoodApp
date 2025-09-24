@@ -68,12 +68,11 @@ figure img {
 
 main ul {
 	padding-bottom: 0;
-	padding: 1.5rem;
+	padding: 1.8rem;
 	margin: 0;
 }
 
 main li {
-	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -88,10 +87,20 @@ main li {
 	flex-direction: column;
 }
 
+.name {	
+font-weight: 400;
+font-size: 1.5rem;
+}
+
 .ingredients {
 	display: flex;
 	margin: 24px;
 	max-width: 100px;
+	font-family: Smythe;
+	font-weight: 400;
+	font-size: 1rem;
+	opacity: 0.8;
+	color: #4F1D03
 }
 
 
@@ -120,10 +129,9 @@ main li {
 
 .menu-icon {
 	display: flex;
-	
 	justify-content: center;
 	width: 3rem;
-	font-size: 3rem;
+	font-size: 4.5rem;
 }
 
 .menu-btn {
@@ -151,6 +159,13 @@ section ul {
 .order li {
 	display: flex;
 	gap: 5px;
+
+	font-family: Smythe;
+	font-weight: 400;
+	
+	font-size: 28px;
+
+
 }
 
 .order-price-wrapper {
@@ -196,15 +211,15 @@ input {
 h3 { /*"checkout" text*/
 		margin: 0;
 		text-align: center;
-		
+		float: center;
 }
 
 .close { /*stänger modal*/ 
     color: #aaa;
-    float: right;
     font-size: 1rem;
     font-weight: bold;
-	margin-right: auto;
+	text-align: left;
+	float: right;
 }
 .close:hover,
 .close:focus {
@@ -233,7 +248,7 @@ h3 { /*"checkout" text*/
 
 @media (min-width: 1200px) {
 	html {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	main, section {
 		width: 50%;
@@ -241,5 +256,9 @@ h3 { /*"checkout" text*/
 	}
 	ul {
 		padding: 0;
+	}
+	.name, .ingredients, .price {
+		font-size: .7rem;
+		width: 100%;
 	}
 }
